@@ -313,6 +313,27 @@ a:hover {
   color: var(--text-secondary);
 }
 
+.footer-links {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+}
+
+.footer-links a {
+  color: rgba(212,175,55,0.6);
+}
+
+.footer-links a:hover {
+  color: #D4AF37;
+}
+
+.footer-links span {
+  color: rgba(255,255,255,0.2);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 640px) {
   .header {
