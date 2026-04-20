@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者导航 - dev.xsanye.cn</title>
+  <meta name="description" content="收录最实用的开发者工具、开源项目和学习资源">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg class="clover-logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="14" r="8" fill="#D4AF37"/>
+          <circle cx="12" cy="22" r="8" fill="#D4AF37"/>
+          <circle cx="28" cy="22" r="8" fill="#D4AF37"/>
+          <circle cx="20" cy="28" r="8" fill="#D4AF37"/>
+          <circle cx="20" cy="20" r="4" fill="#B68D40"/>
+        </svg>
+        <div class="logo-text">
+          <h1>开发者导航</h1>
+          <span class="domain">dev.xsanye.cn</span>
+        </div>
+      </div>
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="搜索工具、文档、平台...">
+      </div>
+    </header>
+
+    <!-- Category Tabs -->
+    <nav class="category-tabs">
+      <button class="tab active" data-category="all">全部</button>
+      <button class="tab" data-category="tool">工具站</button>
+      <button class="tab" data-category="oss">开源项目</button>
+      <button class="tab" data-category="docs">开发文档</button>
+      <button class="tab" data-category="learn">学习平台</button>
+      <button class="tab" data-category="util">实用工具</button>
+      <button class="tab" data-category="ai">AI工具</button>
+    </nav>
+
+    <!-- Content Grid -->
+    <main class="content" id="contentGrid">
+      <!-- Cards will be injected by JS -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 <a href="https://xsanye.cn" target="_blank">xsanye.cn</a> &middot; 用心整理，助你开发</p>
+    </footer>
+  </div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
