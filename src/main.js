@@ -104,6 +104,30 @@ const CATEGORY_NAMES = {
   ai: 'AI工具'
 };
 
+// ===== Hash Routing =====
+const VALID_CATEGORIES = ['tool', 'oss', 'docs', 'learn', 'util', 'ai'];
+
+function getCategoryFromHash() {
+  const hash = window.location.hash;
+  const match = hash.match(/^#\/category\/(\w+)$/);
+  if (match && VALID_CATEGORIES.includes(match[1])) {
+    return match[1];
+  }
+  return 'all';
+}
+
+function syncTabUI(category) {
+  tabs.forEach(t => {
+    t.classList.toggle('active', t.dataset.category === category);
+  });
+}
+
+function initFromHash() {
+  const cat = getCategoryFromHash();
+  currentCategory = cat;
+  syncTabUI(cat);
+}
+
 // ===== Render =====
 function render() {
   let filtered = siteData;
@@ -151,8 +175,18 @@ tabs.forEach(tab => {
     tabs.forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
     currentCategory = tab.dataset.category;
+    setHash(currentCategory);
     render();
   });
+});
+
+// ===== Hash routing init =====
+initFromHash();
+window.addEventListener('hashchange', () => {
+  const cat = getCategoryFromHash();
+  currentCategory = cat;
+  syncTabUI(cat);
+  render();
 });
 
 // ===== Init =====
