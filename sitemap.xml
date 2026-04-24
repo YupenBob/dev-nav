@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://dev.xsanye.cn/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://dev.xsanye.cn/?cat=tool</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dev.xsanye.cn/?cat=oss</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dev.xsanye.cn/?cat=docs</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dev.xsanye.cn/?cat=learn</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dev.xsanye.cn/?cat=util</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+</urlset>
